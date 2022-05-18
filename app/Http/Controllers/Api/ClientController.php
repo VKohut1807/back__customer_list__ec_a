@@ -34,9 +34,9 @@ class ClientController extends Controller
         $client->address_street = $data["address_street"];
         $client->address_city = $data["address_city"];
         $client->address_zipcode = $data["address_zipcode"];
-        $client->phone = $data["phone"];
+        $client->phone = $data["phone"]?? null;
         $client->company_name = $data["company_name"];
-        $client->company_bs = $data["company_bs"];
+        $client->company_bs = $data["company_bs"]?? null;
 
         $client->save();
 
