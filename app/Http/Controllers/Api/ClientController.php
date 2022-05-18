@@ -31,12 +31,12 @@ class ClientController extends Controller
         $client = new Client();
         $client->name = $data["name"];
         $client->email = $data["email"];
-        $client->street = $data["address"]["street"];
-        $client->city = $data["address"]["city"];
-        $client->zipcode = $data["address"]["zipcode"];
+        $client->address_street = $data["address_street"];
+        $client->address_city = $data["address_city"];
+        $client->address_zipcode = $data["address_zipcode"];
         $client->phone = $data["phone"];
-        $client->nameC = $data["company"]["name"];
-        $client->bs = $data["company"]["bs"];
+        $client->company_name = $data["company_name"];
+        $client->company_bs = $data["company_bs"];
 
         $client->save();
 
@@ -67,12 +67,12 @@ class ClientController extends Controller
 
         $client->name = $data["name"];
         $client->email = $data["email"];
-        $client->street = $data["address"]["street"];
-        $client->city = $data["address"]["city"];
-        $client->zipcode = $data["address"]["zipcode"];
+        $client->address_street = $data["address_street"];
+        $client->address_city = $data["address_city"];
+        $client->address_zipcode = $data["address_zipcode"];
         $client->phone = $data["phone"];
-        $client->nameC = $data["company"]["name"];
-        $client->bs = $data["company"]["bs"];
+        $client->company_name = $data["company_name"];
+        $client->company_bs = $data["company_bs"];
 
         $client->save();
 
