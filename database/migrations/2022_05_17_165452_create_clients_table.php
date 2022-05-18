@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string("address_street", 25);
             $table->string("address_city", 15);
             $table->string("address_zipcode", 15);
-            $table->string("phone", 15);
+            $table->string("phone", 15)->nullable();
             $table->string("company_name", 25);
-            $table->string("company_bs", 30);
+            $table->string("company_bs", 30)->nullable();
             $table->timestamps();
         });
     }
