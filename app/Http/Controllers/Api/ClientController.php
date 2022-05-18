@@ -15,7 +15,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return Client::paginate(5);
+        return response(Client::paginate(), 200);
     }
 
     /**
@@ -40,7 +40,7 @@ class ClientController extends Controller
 
         $client->save();
 
-        return $client;
+        return response($client, 201);
     }
 
     /**
@@ -51,7 +51,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-        return $client;
+        return response($client, 200);
     }
 
     /**
@@ -76,7 +76,7 @@ class ClientController extends Controller
 
         $client->save();
 
-        return $client;
+        return response($client, 200);
     }
 
     /**
