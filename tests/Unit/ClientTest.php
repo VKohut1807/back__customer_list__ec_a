@@ -52,4 +52,14 @@ class ClientTest extends TestCase
        $response = $this->delete('/api/clients/1');
         $this->assertEquals(204,$response->status());
     }
+
+    // TEST ANAGRAM
+    function test_anagram_word()
+    {
+        $word1 = "Qwerty";
+        $word2 = "YQTwre";
+    	$wordFind1 = str_split(strtolower(strval($word1)));
+        $wordFind2 = str_split(strtolower(strval($word2)));
+        $this->assertTrue(!array_diff($wordFind1, $wordFind2) && !array_diff($wordFind2, $wordFind1));
+    }
 }
