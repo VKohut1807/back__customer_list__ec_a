@@ -1,3 +1,24 @@
+## Steps to follow
+
+1. Clone the repository to your local computer.
+2. Create a file in katalag /database `database.sqlite`.
+3. In the main catalog of the product create a file `.env`.
+4. Сopy all data from file `.env.example` to file `.env`.
+5. In the file ".env" replace these terms :
+```bash
+    DB_CONNECTION=sqlite
+    # DB_HOST=127.0.0.1
+    # DB_PORT=3306
+    # DB_DATABASE=laravel
+    # DB_USERNAME=root
+    # DB_PASSWORD=
+```
+6. Open the terminal and install the packages: `composer install`.
+7. In the terminal start migration: `php artisan migrate`.
+8. Next run the command: `php artisan key:generate`.
+9. Start the project - run the command: `php artisan serve`.
+10. (running tests from `\back__customer_list__ec_a\tests\Unit\ClientTest.php`) - run the command: `php artisan test`.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
