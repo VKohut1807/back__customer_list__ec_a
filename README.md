@@ -17,7 +17,7 @@
 7. In the terminal start migration: `php artisan migrate`.
 8. Next run the command: `php artisan key:generate`.
 9. Start the project - run the command: `php artisan serve`.
-10. (running tests from `\back__customer_list__ec_a\tests\Unit\ClientTest.php`) - run the command: `php artisan test`.
+10. (running tests from `\tests\Unit\ClientTest.php`) - run the command: `php artisan test`.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
